@@ -9,3 +9,6 @@
 .steps{grid-template-columns:repeat(4,minmax(0,1fr))}
 @media (max-width:900px){.steps{grid-template-columns:repeat(2,minmax(0,1fr))}}
 @media (max-width:640px){.shots{padding:0 16px}.shot-tabs{border-radius:16px}.steps{grid-template-columns:1fr}}
+.works{margin:22px auto 0;font-size:13.5px;color:var(--secondary)}
+.works strong{color:var(--ink);font-weight:600}
+.works span{color:var(--muted);margin:0 6px}
