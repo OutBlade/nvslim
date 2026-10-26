@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#0b0c0e">
+  <meta name="description" content="NVSlim builds a slim NVIDIA or AMD driver installer: pick the parts you want, drop telemetry and extras, install or save it for later. Free, portable, no installer.">
+  <meta name="robots" content="index,follow">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="NVSlim">
+  <meta property="og:title" content="NVSlim: slim NVIDIA and AMD driver installs">
+  <meta property="og:description" content="Pick the driver parts you want, drop telemetry and extras. Free and portable.">
+  <meta property="og:image" content="assets/icon.png">
+  <meta name="twitter:card" content="summary">
+  <title>NVSlim: slim NVIDIA and AMD driver installs</title>
+  <link rel="icon" href="assets/icon.png">
+  <link rel="preload" href="assets/manrope-semibold.ttf" as="font" type="font/ttf" crossorigin>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="nvslim.css">
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"SoftwareApplication","name":"NVSlim","applicationCategory":"UtilitiesApplication","operatingSystem":"Windows 10, Windows 11","isAccessibleForFree":true,"offers":{"@type":"Offer","price":"0","priceCurrency":"EUR"},"featureList":["Custom NVIDIA and AMD driver packages","Remove telemetry and unwanted components","Driver-only AMD installs","Graphics card details","Portable setup file for other PCs"]}
+  </script>
+</head>
+<body>
+  <a class="skip-link" href="#download">Skip to download</a>
+
+  <header class="nav">
+    <div class="nav-inner">
+      <a class="brand" href="./" aria-label="NVSlim home"><img src="assets/icon.png" alt="" width="256" height="256"><span>NVSlim</span></a>
+      <nav class="nav-links" aria-label="Sections">
+        <a href="#how">How it works</a>
+        <a href="#features">Features</a>
+        <a href="#faq">FAQ</a>
+      </nav>
+      <a class="pill pill-accent nav-cta" href="NVSlim.exe" download>Download</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" aria-labelledby="page-title">
+      <h1 id="page-title">Your graphics driver,<br><span>without the extras.</span></h1>
+      <p class="lead">NVSlim builds a custom NVIDIA or AMD driver installer. Keep the driver and the parts you use, leave out telemetry, overlays and apps you never asked for.</p>
+      <p class="price"><strong>Free.</strong> No subscription, no account, no installer.</p>
+      <div class="cta-row" id="download">
+        <a class="pill pill-light" href="NVSlim.exe" download>Download for Windows <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 4v12m-5-5 5 5 5-5M5 19h14"/></svg></a>
+        <a class="pill pill-outline" href="#shots">See the screens</a>
+      </div>
+      <p class="fine">Windows 10 and 11, 64-bit <span aria-hidden="true">/</span> <span id="file-size">232 KB</span> <span aria-hidden="true">/</span> version <span id="file-version">1.0.0</span> <span aria-hidden="true">/</span> no installer</p>
+    </section>
+
+    <section class="shots" id="shots" aria-label="Screens of NVSlim">
+      <div class="shot-tabs" role="tablist">
+        <button type="button" role="tab" aria-selected="true" data-shot="1-driver">Driver</button>
+        <button type="button" role="tab" aria-selected="false" data-shot="2-components">Components</button>
+        <button type="button" role="tab" aria-selected="false" data-shot="3-tweaks">Tweaks</button>
+        <button type="button" role="tab" aria-selected="false" data-shot="4-preparing">Preparing</button>
+        <button type="button" role="tab" aria-selected="false" data-shot="5-finished">Finished</button>
+        <button type="button" role="tab" aria-selected="false" data-shot="7-amd-components">AMD</button>
+        <button type="button" role="tab" aria-selected="false" data-shot="6-gpu-info">GPU Info</button>
+      </div>
+      <div class="glow" aria-hidden="true"></div>
+      <figure class="shot-frame"><img id="shot" src="shots/1-driver.png" alt="NVSlim: Select Driver Version To Install" width="840" height="994"></figure>
+    </section>
+
+    <section class="block" id="how" aria-labelledby="how-title">
+      <h2 id="how-title">A clean driver in four steps</h2>
+      <p class="sub">The same steps for NVIDIA and AMD.</p>
+      <ol class="cards steps">
+        <li><span class="num">1</span><h3>Pick the driver</h3><p>NVSlim finds your card and the newest driver on nvidia.com or amd.com. Or choose an older version, or a driver file you already downloaded.</p></li>
+        <li><span class="num">2</span><h3>Choose the parts</h3><p>Keep the display driver, HDMI audio and what you use. Leave out telemetry, the NVIDIA App or AMD Software if you don't want them.</p></li>
+        <li><span class="num">3</span><h3>Set the tweaks</h3><p>Clean install, no installer telemetry, unattended setup, restore point, and expert options such as MSI mode or the NVENC patch.</p></li>
+        <li><span class="num">4</span><h3>Install or save</h3><p>Install right away, or save a folder or one setup file for other PCs and USB sticks.</p></li>
+      </ol>
+    </section>
+
+    <section class="block" id="features" aria-labelledby="features-title">
+      <h2 id="features-title">What it does</h2>
+      <p class="sub">Built from what driver tinkerers asked for.</p>
+      <ul class="cards facts">
+        <li><h3>NVIDIA</h3><p>Removes Telemetry, ShadowPlay or the NVIDIA App without NVIDIA's setup putting them back. Legacy Control Panel without the Microsoft Store.</p></li>
+        <li><h3>AMD</h3><p>Driver-only installs through Windows itself, or Adrenalin without the User Experience Program, Ryzen Master SDK and laptop drivers you don't need.</p></li>
+        <li><h3>Services on demand</h3><p>NVIDIA's container services start only while the Control Panel or NVIDIA App is open.</p></li>
+        <li><h3>GPU Info</h3><p>A graphics card details window: chip, memory, clocks, bus, BIOS, driver, Resizable BAR and live sensors.</p></li>
+        <li><h3>Stress test</h3><p>Starts FurMark after the install to check the new driver under load.</p></li>
+        <li><h3>Nothing hidden</h3><p>Drivers come straight from NVIDIA and AMD and are checked for their signature. Every change is listed in the log.</p></li>
+      </ul>
+    </section>
+
+    <section class="block faq" id="faq" aria-labelledby="faq-title">
+      <h2 id="faq-title">Questions</h2>
+      <div class="faq-list">
+        <details><summary>Is NVSlim free?</summary><p>Yes. There is no paid version and no account.</p></details>
+        <details><summary>Windows says “Windows protected your PC”.</summary><p>NVSlim is not code-signed yet, so SmartScreen warns about new files. Choose More info, then Run anyway.</p></details>
+        <details><summary>Do I need a GPU-Z or FurMark copy?</summary><p>GPU Info is part of NVSlim. For the stress test NVSlim starts your installed FurMark 1, or opens Geeks3D's download page; FurMark is Geeks3D's program and is not included.</p></details>
+        <details><summary>What does “re-signs the driver” mean?</summary><p>A few expert tweaks change driver files. NVSlim then signs the package with a certificate made just for it and asks before trusting that certificate on your PC. By default it is removed again right after the install.</p></details>
+        <details><summary>Has it been tested?</summary><p>Building packages from real NVIDIA 621.01 and AMD 26.10.1 drivers is tested. The installation itself is new: create a restore point (on by default) and keep the log, which you find on the last page.</p></details>
+        <details><summary>Is this an official NVIDIA, AMD or TechPowerUp product?</summary><p>No. NVSlim is an independent tool, not affiliated with or endorsed by NVIDIA, AMD, TechPowerUp or Geeks3D. NVIDIA, GeForce, AMD, Radeon and Adrenalin are trademarks of their owners.</p></details>
+      </div>
+    </section>
+
+    <section class="final" aria-labelledby="final-title">
+      <h2 id="final-title">Install only what you need.</h2>
+      <a class="pill pill-light" href="NVSlim.exe" download>Download for Windows <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 4v12m-5-5 5 5 5-5M5 19h14"/></svg></a>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+      <span>NVSlim by BLADE</span>
+      <span>Not affiliated with NVIDIA, AMD or TechPowerUp.</span>
+    </div>
+  </footer>
+  <script>
+    // Screens: one image, switched by the tabs above it.
+    var titles = { '1-driver': 'Select Driver Version To Install', '2-components': 'Select Components To Install', '3-tweaks': 'Installation Tweaks',
+                   '4-preparing': 'Preparing Sources', '5-finished': 'Finished', '7-amd-components': 'AMD components', '6-gpu-info': 'GPU Info' };
+    var img = document.getElementById('shot');
+    document.querySelectorAll('.shot-tabs button').forEach(function (b) {
+      b.addEventListener('click', function () {
+        document.querySelectorAll('.shot-tabs button').forEach(function (o) { o.setAttribute('aria-selected', o === b ? 'true' : 'false'); });
+        img.src = 'shots/' + b.dataset.shot + '.png';
+        img.alt = 'NVSlim: ' + titles[b.dataset.shot];
+      });
+    });
+  </script>
+</body>
+</html>
